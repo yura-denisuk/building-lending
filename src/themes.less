@@ -1,0 +1,387 @@
+@backgroundColor: #25252d;
+@backgroundColorBorder: #363d51;
+@backgroundColorGuarantees: #313139FF;
+@fontFamilyColor: rgb(255, 255, 255);
+@fontFamilyColorHeaderBell: rgb(236, 198, 107);
+@fontFamilyColorHeaderSloganDown: rgb(186, 186, 186);
+@fontFamilyColorBtn: rgb(37, 37, 45);
+@fontFamilyColorNext: rgb(137, 137, 138);
+
+@popupWidth: 558px;
+@popupHeight: 481px;
+
+.btn {
+  background-image: -moz-linear-gradient(0deg, rgb(252, 195, 114) 0%, rgb(240, 219, 188) 100%);
+  background-image: -webkit-linear-gradient(0deg, rgb(252, 195, 114) 0%, rgb(240, 219, 188) 100%);
+  background-image: -ms-linear-gradient(0deg, rgb(252, 195, 114) 0%, rgb(240, 219, 188) 100%);
+  padding: 21px 0;
+  font-size: 18px;
+  font-family: MuseoSansCyrl700, sans-serif;
+  color: @fontFamilyColorBtn;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  box-sizing: border-box;
+
+  &:hover {
+    box-shadow: 0 5px 9px 1px rgba(185, 124, 22, 0.5);
+  }
+}
+
+.btn-1 {
+  padding: 21px 0;
+  font-size: 18px;
+  font-family: MuseoSansCyrl700, sans-serif;
+  background: transparent;
+  color: @fontFamilyColor;
+  border: 1px solid @fontFamilyColor;
+  border-radius: 30px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.projectQuality {
+  border-radius: 50%;
+  border: 1px solid @fontFamilyColorHeaderBell;
+  font-size: 20px;
+  line-height: 1.25;
+  font-family: MuseoSansCyrl500, sans-serif;
+  color: @fontFamilyColorHeaderBell;
+  text-align: center;
+}
+
+.title {
+  font-family: Neumann, sans-serif;
+  color: @fontFamilyColorHeaderBell;
+  text-align: center;
+}
+
+.technologyTitle {
+  font-size: 18px;
+  font-family: MuseoSansCyrl500, sans-serif;
+  color: @fontFamilyColor;
+  text-align: left;
+}
+
+.technologyTitleAdaptive {
+  font-size: 16px;
+  font-family: MuseoSansCyrl500, sans-serif;
+  color: @fontFamilyColor;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.sliderAddress {
+  font-size: 16px;
+  font-family: MuseoSansCyrl300, sans-serif;
+  color: @fontFamilyColor;
+  text-align: left;
+}
+
+.technologyText {
+  font-size: 16px;
+  line-height: 1.313;
+  color: @fontFamilyColor;
+  text-align: left;
+}
+
+.technologyTextAdaptive {
+  font-size: 14px;
+  line-height: 1.313;
+  color: @fontFamilyColor;
+  text-align: left;
+}
+
+
+.stepsItemText {
+  font-size: 18px;
+  line-height: 1.278;
+  color: @fontFamilyColor;
+  text-align: left;
+}
+
+
+.guaranteesStyleTwo {
+  font-size: 18px;
+  font-family: MuseoSansCyrl500, sans-serif;
+  color: @fontFamilyColor;
+}
+
+.technology__description-image {
+  display: none;
+  width: 35px;
+  height: 35px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  position: absolute;
+}
+
+
+//Слайдер
+.slick-slider {
+
+}
+
+//Ограничивающая оболочка
+.slick-list {
+  overflow: hidden;
+}
+
+//Лента слайдов
+.slick-track {
+  display: flex;
+  align-items: flex-start;
+}
+
+//Слайд
+.slick-slide {
+
+}
+
+//Активный слайд
+.slick-slide.slick-active {
+
+}
+
+//Слайд основной
+.slick-slide.slick-current {
+
+}
+
+//Слайд по центру
+.slick-slide.slick-center {
+
+}
+
+//Стрелка
+.slick-arrow {
+
+}
+
+//Стрелка влево
+.slick-arrow.slick-prev {
+
+}
+
+//Стрелка вправо
+.slick-arrow.slick-next {
+
+}
+
+//Стрелка неактивная
+.slick-arrow.slick-disabled {
+
+}
+
+//Точки
+.slick-dots {
+
+}
+
+.slick-dots li {
+
+}
+
+.slick-dots button {
+
+}
+
+//Стилизация конкретно нашего слайда
+.slider {
+  position: relative;
+  padding: 0 78px;
+
+  .slider__item {
+    position: relative;
+
+    .slider__description {
+      display: none;
+      position: absolute;
+      bottom: 49px;
+      left: 35px;
+      background-color: @backgroundColorGuarantees;
+      align-items: center;
+      justify-content: space-between;
+
+      .slider__text {
+        margin-right: 39px;
+
+        .slider__name {
+          .technologyTitle;
+          margin-bottom: 10px;
+        }
+
+        .slider__address {
+          .sliderAddress;
+        }
+      }
+
+      .slider__line {
+        width: 1px;
+        height: 45px;
+        background-color: @fontFamilyColor;
+        margin-right: 39px;
+      }
+
+      .slider__parameters {
+        .slider__sizes {
+          display: flex;
+          align-items: baseline;
+          justify-content: left;
+
+          .slider__name {
+            .technologyTitle;
+            margin-right: 15px;
+            margin-bottom: 10px;
+          }
+
+          .slider__value {
+            .sliderAddress;
+          }
+        }
+
+        .slider__square {
+          display: flex;
+          align-items: baseline;
+          justify-content: left;
+
+          .slider__name {
+            .technologyTitle;
+            margin-right: 15px;
+          }
+
+          .slider__value {
+            .sliderAddress;
+          }
+        }
+      }
+    }
+  }
+
+  & .slider__item:nth-child(3) {
+    opacity: 0.6;
+    .slider__description {
+      padding: 15px 57px 15px 56px;
+    }
+  }
+
+  & .slider__item:nth-child(4) {
+    opacity: 0.6;
+    .slider__description {
+      padding: 15px 80px 15px 79px;
+    }
+  }
+
+  & .slider__item:nth-child(5) {
+    .slider__description {
+      padding: 15px 57px 15px 56px;
+    }
+  }
+
+  & .slider__item:nth-child(6) {
+    opacity: 0.6;
+    .slider__description {
+      padding: 15px 57px 15px 56px;
+    }
+  }
+
+  & .slider__item:nth-child(7) {
+    opacity: 0.6;
+    .slider__description {
+      padding: 15px 57px 15px 56px;
+    }
+  }
+
+  .slick-arrow {
+    position: absolute;
+    top: calc(50% - 25px);
+    z-index: 2;
+    font-size: 0;
+    cursor: pointer;
+
+    &.slick-prev {
+      left: 0;
+      width: 50px;
+      height: 50px;
+      border: none;
+      background: url("../images/slider/arrow/left.png") 0 0 / 100% no-repeat;
+    }
+
+    &.slick-next {
+      right: 0;
+      width: 50px;
+      height: 50px;
+      border: none;
+      background: url("../images/slider/arrow/right.png") 0 0 / 100% no-repeat;
+    }
+  }
+
+  .slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .slick-dots li {
+    list-style: none;
+    margin-top: 30px;
+
+    &.slick-active {
+      button {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        border: 1px solid @fontFamilyColorHeaderBell;
+        background: @fontFamilyColorHeaderBell;
+      }
+    }
+  }
+
+  .slick-dots button {
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid @fontFamilyColorHeaderBell;
+    background: transparent;
+  }
+
+  .slick-slide {
+    transition: all 0.5s ease;
+    padding: 48px 37px 50px 37px;
+    &.slick-center {
+      transform: scale(1.25);
+
+      .slider__description {
+        display: flex;
+      }
+    }
+
+    .slider__description {
+      display: none;
+    }
+  }
+}
+
+.input {
+  padding: 22px;
+  border-radius: 29px;
+  border: 1px solid @fontFamilyColor;
+  background-color: transparent;
+  color: @fontFamilyColor;
+  text-align: left;
+  max-width: 409px;
+  width: 100%;
+  box-sizing: border-box;
+
+  &::placeholder {
+    font-size: 18px;
+    font-family: MuseoSansCyrl300, sans-serif;
+    color: @fontFamilyColor;
+    text-align: left;
+  }
+}
+
+
+
